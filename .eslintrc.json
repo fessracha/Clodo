@@ -28,6 +28,12 @@
         "vue/component-definition-name-casing" : ["error", "PascalCase"],
         "vue/component-name-in-template-casing": ["error", "PascalCase", {
             "registeredComponentsOnly": true
-        }]
+        }],
+        "vue/html-closing-bracket-spacing": "off",
+        "require-jsdoc": "off",
+        "new-cap": "off",
+        "func-call-spacing": "off",
+        "no-multiple-empty-lines": ["error", {"max": 1}],
+        "linebreak-style": ["error", "windows"]
     }
 }
