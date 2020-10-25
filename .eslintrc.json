@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/essential",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "google",
+        "plugin:vue/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "vue",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-undef": "off",
+        "vue/component-definition-name-casing" : ["error", "PascalCase"],
+        "vue/component-name-in-template-casing": ["error", "PascalCase", {
+            "registeredComponentsOnly": true
+        }]
+    }
+}
