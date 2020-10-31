@@ -1,11 +1,9 @@
 <template>
-  <div
-    id="app"
-  >
-    <Header />
+  <div id="app">
+    <Header/>
     <div>
-      <SideBar />
-      <RouterView />
+      <SideBar/>
+      <RouterView/>
     </div>
   </div>
 </template>

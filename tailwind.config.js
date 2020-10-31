@@ -5,7 +5,12 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'clodo-blue-1': '#0078D7',
+        'clodo-blue-2': '#8cbae5',
+      },
+    },
   },
   variants: {},
   plugins: [],

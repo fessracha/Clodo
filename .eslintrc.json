@@ -34,6 +34,6 @@
         "new-cap": "off",
         "func-call-spacing": "off",
         "no-multiple-empty-lines": ["error", {"max": 1}],
-        "linebreak-style": ["error", "windows"]
+        "linebreak-style": "off"
     }
 }
