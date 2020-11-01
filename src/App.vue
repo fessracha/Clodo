@@ -11,6 +11,7 @@
 import {Vue, Component} from 'vue-property-decorator';
 import Header from '@/components/layouts/Header.vue';
 import SideBar from '@/components/layouts/SideBar.vue';
+import '@/plugins/directives/click-outside.js';
 
 @Component ({
   components: {

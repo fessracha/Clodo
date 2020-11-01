@@ -1,6 +1,8 @@
 <template>
   <div class="header">
-    <div class="header__logo">Clodo</div>
+    <div class="header__logo">
+      Clodo
+    </div>
     <div class="header__search">
       <SearchSelect/>
     </div>
