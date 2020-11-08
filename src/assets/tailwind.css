@@ -1,5 +1,9 @@
 @tailwind base;
 
+input:focus, button:focus {
+    outline: none;
+}
+
 @tailwind components;
 
 @tailwind utilities;

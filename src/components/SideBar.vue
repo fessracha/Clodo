@@ -2,7 +2,7 @@
   <div class="sidebar"
     :class="{'sidebar--opened': isOpened}">
     <div class="sidebar-header">
-      <BaseButton class="text-xl leading-none p-1"
+      <BaseButton class="text-lg leading-none p-1 rounded-sm"
                   @click="isOpened = !isOpened">
         <i class="ms-Icon ms-Icon--GlobalNavButton"></i>
       </BaseButton>
@@ -41,5 +41,6 @@ export default class SideBar extends Vue {
 }
 .sidebar-header {
   @apply px-2 mt-3;
+  height: 48px;
 }
 </style>

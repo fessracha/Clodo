@@ -64,7 +64,6 @@ export default class SearchSelect extends Vue {
 .search-select__input {
   background: transparent;
   font-size: 13px;
-  outline: none;
   line-height: 1;
   width: 100%;
 }
