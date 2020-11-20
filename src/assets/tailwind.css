@@ -4,6 +4,15 @@ input:focus, button:focus {
     outline: none;
 }
 
+.list-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 8px;
+}
+
 @tailwind components;
 
 @tailwind utilities;

@@ -1,9 +1,13 @@
 <template>
   <div id="app">
-    <Header/>
-    <SideBar/>
-    <div>
-      <RouterView/>
+    <div class="h-screen">
+      <Header/>
+      <div class="page-wrapper">
+        <SideBar/>
+        <div class="center-content">
+          <RouterView/>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -23,4 +27,11 @@ export default class App extends Vue {
 </script>
 <style>
 @import "./assets/tailwind.css";
+.page-wrapper {
+  display: flex;
+  height: calc(100vh - 48px);
+}
+.center-content {
+  flex: 1 1 auto;
+}
 </style>

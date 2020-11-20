@@ -37,7 +37,7 @@ export default class SideBar extends Vue {
 <style scoped>
 .sidebar {
   @apply bg-clodo-gray-1;
-  min-height: 100vh;
+  height: 100%;
   width: 50px;
   overflow: hidden;
   transition: 0.2s width ease;
