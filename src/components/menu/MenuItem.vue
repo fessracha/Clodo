@@ -2,14 +2,14 @@
     <li class="menu-item"
       :class="{'menu-item--active': isActive}"
       @click="$emit('click')">
-      <a class="menu-item-link"
+      <a class="menu-item__link"
          :href="href"
          @click="navigate">
-        <div class="icon">
+        <div class="menu-item__icon">
           <slot name="icon"></slot>
         </div>
-        <div class="menu-item-title">{{ title }}</div>
-        <div class="menu-item-count">{{ count }}</div>
+        <div class="menu-item__title">{{ title }}</div>
+        <div class="menu-item__count">{{ count }}</div>
       </a>
     </li>
 </template>
@@ -37,16 +37,16 @@ export default class MenuItem extends Vue {
 .menu-item--active {
   @apply text-clodo-blue-4 font-semibold;
 }
-.menu-item-link {
+.menu-item__link {
   @apply flex items-center h-full;
 }
-.menu-item-title {
+.menu-item__title {
   @apply mx-2 text-sm overflow-hidden;
 }
-.menu-item-count {
+.menu-item__count {
   @apply text-sm ml-auto;
 }
-.icon {
+.menu-item__icon {
   min-width: 24px;
   text-align: center;
 }

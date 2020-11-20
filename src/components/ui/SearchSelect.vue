@@ -1,6 +1,6 @@
 <template>
   <div
-    class="search-select bg-clodo-blue-2 hover:bg-white cursor-pointer"
+    class="search-select"
     @click.stop="toggleInputActive"
   >
     <div
@@ -11,23 +11,22 @@
         class="ms-Icon ms-Icon--Search"
         title="Search"
         aria-hidden="true"
-      ></i>
+      />
     </div>
     <input
+      v-click-outside="() => isInputActive = false"
       ref="input"
       class="search-select__input cursor-text"
       type="text"
-      v-click-outside="() => isInputActive = false"
     >
     <div
-      class="search-select__close"
       v-if="isInputActive"
+      class="search-select__close"
     >
       <i
         class="ms-Icon ms-Icon--ChromeClose"
-        title="ChromeClose"
-        aria-hidden="true">
-      </i>
+        title="close"
+        aria-hidden="true"/>
     </div>
   </div>
 </template>
@@ -53,6 +52,7 @@ export default class SearchSelect extends Vue {
 </script>
 <style scoped>
 .search-select {
+  @apply bg-clodo-blue-2 cursor-pointer;
   display: flex;
   align-items: center;
   border-radius: 2px;
@@ -60,6 +60,9 @@ export default class SearchSelect extends Vue {
   transition: all 0.2s ease;
   padding: 8px 30px 8px 8px;
   position: relative;
+}
+.search-select:hover {
+  @apply bg-white;
 }
 .search-select__input {
   background: transparent;

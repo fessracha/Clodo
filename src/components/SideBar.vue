@@ -1,10 +1,16 @@
 <template>
-  <div class="sidebar"
-    :class="{'sidebar--opened': isOpened}">
-    <div class="sidebar-header">
-      <BaseButton class="text-lg leading-none p-1 rounded-sm"
-                  @click="isOpened = !isOpened">
-        <i class="ms-Icon ms-Icon--GlobalNavButton"></i>
+  <div
+    class="sidebar"
+    :class="{'sidebar--opened': isOpened}"
+  >
+    <div
+      class="sidebar__header"
+    >
+      <BaseButton
+        class="sidebar__button"
+        @click="isOpened = !isOpened"
+      >
+        <i class="ms-Icon ms-Icon--GlobalNavButton"/>
       </BaseButton>
     </div>
     <div class="sidebar-body">
@@ -39,8 +45,11 @@ export default class SideBar extends Vue {
 .sidebar--opened {
   width: 290px;
 }
-.sidebar-header {
+.sidebar__header {
   @apply px-2 mt-3;
   height: 48px;
+}
+.sidebar__button {
+  @apply text-lg leading-none p-1 rounded-sm;
 }
 </style>
