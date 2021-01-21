@@ -1,26 +1,30 @@
 <template>
-    <li class="menu-item"
-      :class="{'menu-item--active': isActive}"
-      @click="$emit('click')">
-      <a class="menu-item__link"
-         :href="href"
-         @click="navigate">
-        <div class="menu-item__icon">
-          <slot name="icon"></slot>
-        </div>
-        <div class="menu-item__title">{{ title }}</div>
-        <div class="menu-item__count">{{ count }}</div>
-      </a>
-    </li>
+  <li
+    class="menu-item"
+    :class="{'menu-item--active': isActive}"
+    @click="$emit('click')"
+  >
+    <a
+      class="menu-item__link"
+      :href="href"
+      @click="navigate"
+    >
+      <div class="menu-item__icon">
+        <slot name="icon"/>
+      </div>
+      <div class="menu-item__title">{{ title }}</div>
+      <div class="menu-item__count">{{ count }}</div>
+    </a>
+  </li>
 </template>
 <script lang="ts">
-import {Vue, Component, Prop} from 'vue-property-decorator';
+import { Vue, Component, Prop } from 'vue-property-decorator';
 
 @Component
 export default class MenuItem extends Vue {
-  @Prop({default: ''}) title?: string;
-  @Prop({default: ''}) count?: number;
-  @Prop({default: false}) isActive?: boolean;
+  @Prop({ default: '' }) title?: string;
+  @Prop({ default: '' }) count?: number;
+  @Prop({ default: false }) isActive?: boolean;
   @Prop() href?: string;
   @Prop() navigate?: any;
 }

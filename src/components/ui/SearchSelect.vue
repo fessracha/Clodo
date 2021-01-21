@@ -14,7 +14,6 @@
       />
     </div>
     <input
-      v-click-outside="() => isInputActive = false"
       ref="input"
       class="search-select__input cursor-text"
       type="text"
@@ -26,12 +25,13 @@
       <i
         class="ms-Icon ms-Icon--ChromeClose"
         title="close"
-        aria-hidden="true"/>
+        aria-hidden="true"
+      />
     </div>
   </div>
 </template>
 <script lang="ts">
-import {Vue, Component, Watch} from 'vue-property-decorator';
+import { Vue, Component, Watch } from 'vue-property-decorator';
 
 @Component({})
 export default class SearchSelect extends Vue {

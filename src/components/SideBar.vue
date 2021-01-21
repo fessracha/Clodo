@@ -19,7 +19,7 @@
   </div>
 </template>
 <script lang="ts">
-import {Vue, Component} from 'vue-property-decorator';
+import { Vue, Component } from 'vue-property-decorator';
 import Menu from '@/components/menu/Menu.vue';
 import BaseButton from '@/components/ui/BaseButton.vue';
 

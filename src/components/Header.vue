@@ -9,7 +9,7 @@
   </div>
 </template>
 <script lang="ts">
-import {Vue, Component} from 'vue-property-decorator';
+import { Vue, Component } from 'vue-property-decorator';
 import SearchSelect from '@/components/ui/SearchSelect.vue';
 
 @Component({

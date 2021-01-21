@@ -1,4 +1,4 @@
-import Vue, {VNode} from 'vue';
+import Vue, { VNode } from 'vue';
 
 declare global {
   // eslint-disable-next-line no-unused-vars

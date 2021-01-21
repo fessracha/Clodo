@@ -33,7 +33,7 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-  ],
+, "src/plugins/directives/click-outside.js"  ],
   "exclude": [
     "node_modules"
   ]
